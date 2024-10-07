@@ -1,0 +1,13 @@
+### 添加学生
+POST http://localhost:8080/v1/students
+Content-Type: application/json
+
+{
+  "no": "20140001",
+  "firstName": "张",
+  "lastName": "三",
+  "age": 18,
+  "gender": "0"
+}
+
+<> 2024-10-06T150122.200.txt
