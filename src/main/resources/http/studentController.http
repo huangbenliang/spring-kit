@@ -11,3 +11,9 @@ Content-Type: application/json
 }
 
 <> 2024-10-06T150122.200.txt
+
+### 查询学生-根据id
+GET http://localhost:8080/v1/students/1
+
+### 查询学生-根据学号
+GET http://localhost:8080/v1/students/no/20140001

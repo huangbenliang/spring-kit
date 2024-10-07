@@ -3,7 +3,7 @@ package org.firsttime.springkit.mapper.pojo;
 import lombok.Data;
 
 @Data
-public class Student {
+public class StudentDo {
     /**
      * id
      */

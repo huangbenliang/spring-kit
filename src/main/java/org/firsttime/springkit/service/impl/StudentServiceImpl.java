@@ -2,6 +2,7 @@ package org.firsttime.springkit.service.impl;
 
 
 import org.firsttime.springkit.controller.dto.StudentAddDto;
+import org.firsttime.springkit.domain.Student;
 import org.firsttime.springkit.mapper.StudentMapper;
 import org.firsttime.springkit.service.StudentService;
 import org.springframework.stereotype.Service;
@@ -20,5 +21,14 @@ public class StudentServiceImpl implements StudentService {
             throw new IllegalArgumentException("student age is valid");
         }
         return studentMapper.addStudent(studentAddDto);
+    }
+
+    @Override
+    public Student getStudent(Student student) {
+        Student studentRes = studentMapper.getStudent(student);
+        if (studentRes == null) {
+            return null;
+        }
+        return student;
     }
 }
