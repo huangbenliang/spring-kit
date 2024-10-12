@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://119.91.198.164:3306/spring_kit?useSSL=false&autoReconnect=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    cache-enabled: true
+    default-executor-type: REUSE
+    use-actual-param-name: true

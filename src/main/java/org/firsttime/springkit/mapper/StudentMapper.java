@@ -1,10 +1,9 @@
 package org.firsttime.springkit.mapper;
 
-import org.firsttime.springkit.controller.dto.StudentAddDto;
-import org.firsttime.springkit.domain.Student;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.firsttime.springkit.mapper.pojo.StudentDo;
 
-public interface StudentMapper {
-    String addStudent(StudentAddDto studentAddDto);
-
-    Student getStudent(Student student);
+@Mapper
+public interface StudentMapper extends BaseMapper<StudentDo> {
 }
