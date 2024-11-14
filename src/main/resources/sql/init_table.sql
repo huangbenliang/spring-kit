@@ -1,4 +1,4 @@
-create database 'spring_kit';
+create database `spring_kit`;
 
 CREATE TABLE `student`
 (
